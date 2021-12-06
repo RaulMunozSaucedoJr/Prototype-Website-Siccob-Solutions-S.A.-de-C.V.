@@ -10,8 +10,9 @@ include_once 'App/FrontEnd/Templates/Resources/Header_Resources.php';
 <body>
 
     <!-- LOADING TRANSITION PAGE -->
-
-    <!--include_once 'App/FrontEnd/Templates/Includes/Loading_Page.php';-->
+    <?php
+    include_once 'App/FrontEnd/Templates/Includes/Loading_Page.php';
+    ?>
     <!----------------------------->
 
     <!-- Main Container -->
