@@ -1,0 +1,123 @@
+@import '../Mixins/Index_Mixins';
+
+.FullScreen {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    word-wrap: break-word;
+}
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 2.5vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-medium: calc(-50% + var(var(--offset))) --move-final: calc(-75% + var(--offset));
+
+    &__inner {
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 10s linear infinite;
+    }
+
+    span {
+        @include Title_Medium_Blue;
+    }
+
+    &:hover {
+
+        .marquee__inner {
+            animation-play-state: running;
+            animation-play-state: paused;
+        }
+
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translate3d(var(--move-initial), 0, 0);
+        }
+
+        50% {
+            transform: translate3d(var(--move-medium), 0, 0);
+        }
+
+        100% {
+            transform: translate3d(var(--move-final), 0, 0);
+        }
+    }
+}
+
+.MiddleScreen {
+    width: 50%;
+    height: auto;
+    min-height: 50vh;
+    word-wrap: break-word;
+}
+
+.Center {
+    display: grid;
+    place-content: center;
+}
+
+.Loading_Animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    background-color: $Blue_Oxford;
+    overflow: hidden;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+
+    .Animate {
+        font-size: $Extra_Grande;
+        font-family: $Titles_Subtitles;
+        text-transform: uppercase;
+        color: $Platinum_White;
+        animation: Animate 10s linear infinite;
+
+        span {
+            -webkit-text-fill-color: $Platinum_White;
+            -webkit-text-stroke: 0.063rem transparent;
+            margin: 0.625rem;
+        }
+
+        @keyframes Animate {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    }
+}
+
+.reveal {
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.valido {
+    border: $Blue_Oxford solid .2em;
+}
+
+.invalido {
+    border: $Error solid .2em;
+}
+
+.swal-text,
+.swal-modal {
+    color: $Granite;
+    text-decoration: none;
+    text-align: center;
+}

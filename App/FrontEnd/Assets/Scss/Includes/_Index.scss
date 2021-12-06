@@ -1,0 +1,18 @@
+//!General Properties
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+@import '../Includes/General_Properties/Reset';
+@import '../Includes/General_Properties/Tags';
+@import '../Includes/General_Properties/Margins';
+@import '../Includes/General_Properties/Paddings';
+@import '../Includes/General_Properties/_Colors';
+@import '../Includes/General_Properties/Typographys';
+@import '../Includes/General_Properties/Font_Sizes';
+@import '../Includes/General_Properties/Animations';
+@import '../Includes/General_Properties/Media_Query';
+
+//!Components
+@import '../Includes/Sections/Index_Sections';
+//!Reusable Clases
+@import '../Includes/Reutilizable_Clases/Reutilizable_Clases';
+//!Mixins
+@import '../Includes/Mixins/Index_Mixins';  

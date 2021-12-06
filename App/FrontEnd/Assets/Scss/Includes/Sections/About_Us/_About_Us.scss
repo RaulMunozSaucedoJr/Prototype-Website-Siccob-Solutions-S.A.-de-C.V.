@@ -1,0 +1,46 @@
+@import '../../Mixins/Index_Mixins';
+@import '../../General_Properties/Paddings';
+@import '../../General_Properties/Margins';
+
+.About_Us {
+
+    &_Left {
+        @include Blue_Background;
+        @include Border_Botom_Blue_Solid;
+
+        h1 {
+            @include Title_Medium_White;
+        }
+    }
+
+    &_Right {
+        @include White_Background;
+        @include Border_Blue_Solid;
+        border-right: transparent;
+        border-top: transparent;
+        word-wrap: break-word;
+        padding: $Padding_1;
+
+        h1 {
+            @include Title_Small_Blue;
+            margin: $Margin_1;
+        }
+
+        p {
+            font-family: $General_Text;
+            font-size: $Extra_Chica;
+            color: $Granite;
+            text-align: justify;
+            line-height: 1.5;
+            padding: $Padding_1;
+            font-weight: lighter;
+            margin: $Margin_1;
+
+            strong {
+                font-family: $Titles_Subtitles;
+                color: $Blue_Oxford;
+                font-weight: bolder;
+            }
+        }
+    }
+}

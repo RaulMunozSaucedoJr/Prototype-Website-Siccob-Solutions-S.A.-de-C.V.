@@ -1,0 +1,13 @@
+@import '../../General_Properties/_Colors';
+
+@mixin White_Background {
+    background-color: $Platinum_White;
+}
+
+@mixin Blue_Background {
+    background-color: $Blue_Oxford;
+}
+
+@mixin Granite_Background {
+    background-color: $Granite;
+}

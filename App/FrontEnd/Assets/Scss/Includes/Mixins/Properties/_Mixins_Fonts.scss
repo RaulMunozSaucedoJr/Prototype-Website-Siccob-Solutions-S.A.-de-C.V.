@@ -1,0 +1,113 @@
+@import '../../General_Properties/_Colors';
+@import '../../General_Properties/Typographys';
+@import '../../General_Properties/_Font_Sizes';
+
+//!Font Family => Titles_Subtitles | Color => Blue_Oxford | FontSize => Extra_Chica, Chica, Mediana, Grande, ExtraGrande*/ 
+
+@mixin Title_ExtraSmall_Blue {
+    font-family: $Titles_Subtitles;
+    font-size: $Extra_Chica;
+    color: $Blue_Oxford;
+    font-weight: bolder;
+    text-align: center;
+}
+
+@mixin Title_Small_Blue {
+    font-family: $Titles_Subtitles;
+    font-size: $Chica;
+    color: $Blue_Oxford;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@mixin Title_Medium_Blue {
+    font-family: $Titles_Subtitles;
+    font-size: $Mediana;
+    font-weight: lighter;
+    letter-spacing: .2rem;
+    color: $Blue_Oxford;
+}
+
+@mixin Title_ExtraBig_Blue_Vertical {
+    font-family: $Titles_Subtitles;
+    font-size: $Extra_Grande;
+    color: $Blue_Oxford;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+@mixin List_Services {
+    display: block;
+    font-family: $Titles_Subtitles;
+    position: relative;
+    font-size: $Mediana;
+    color: $Blue_Oxford;
+    margin: $Margin_1;
+    z-index: 2;
+    padding: $Padding_1;
+    text-align: center;
+}
+
+//!Font Family => Titles_Subtitles | Color => Platinum_White | FontSize => Extra_Chica, Chica, Mediana, Grande, ExtraGrande*/
+@mixin Title_Big_White {
+    font-family: $Titles_Subtitles;
+    font-size: $Grande;
+    color: $Platinum_White;
+}
+
+@mixin Title_Big_White_Vertical {
+    padding: $Padding_1;
+    font-family: $Titles_Subtitles;
+    font-size: $Grande;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: $Platinum_White;
+}
+
+@mixin Title_Medium_White {
+    font-family: $Titles_Subtitles;
+    font-size: $Mediana;
+    font-weight: bolder;
+    color: $Platinum_White;
+    padding: 0.5em;
+}
+
+@mixin Title_ExtraSmall_White {
+    font-family: $Titles_Subtitles;
+    font-weight: lighter;
+    font-size: $Extra_Chica;
+    color: $Platinum_White;
+    text-align: center;
+}
+
+//!Font Family => General | Color => Platinum_White | FontSize => Extra_Chica, Chica, Mediana, Grande, ExtraGrande*/
+@mixin General_White {
+    font-family: $General_Text;
+    font-weight: bold;
+    line-height: 6vh;
+    letter-spacing: .2em;
+    text-align: left;
+    font-size: 1.3em;
+    color: $Platinum_White;
+}
+
+//!Font Family => General Text | Color => Granite | FontSize => Extra_Chica, Chica, Mediana, Grande, ExtraGrande*/
+
+@mixin General_Small_Granite {
+    text-align: left;
+    font-family: $General_Text;
+    font-size: .8em;
+    color: $Platinum_White;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+@mixin General_Medium_Granite {
+    text-align: center;
+    font-family: $General_Text;
+    font-size: 1.5em;
+    color: $Granite;
+    text-decoration: none;
+    text-emphasis: none;
+}

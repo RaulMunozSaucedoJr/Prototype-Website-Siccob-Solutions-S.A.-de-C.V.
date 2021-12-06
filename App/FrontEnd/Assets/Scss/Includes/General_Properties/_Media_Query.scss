@@ -1,0 +1,48 @@
+@import '../Mixins/Index_Mixins';
+@import '../General_Properties/_Colors';
+
+@media only screen and (max-width: 37.5rem) {
+
+    //! HERO WELCOME SECTION
+    .Hero_Right {
+        display: none;
+        visibility: hidden;
+    }
+
+    //! RESET BORDERS SERVICES SECTION
+    .Services_Left_Inner_1,
+    .Services_Left_Inner_2,
+    .Services_Left_Inner_3,
+    .Services_Left_Inner_4,
+    .About_Us_Right,
+    .Clients_Left {
+        border: transparent !important;
+    }
+
+    //!ADJUST SIZE OF TYPOGRAPHY ON EACH SECTION
+
+    .Hero_Left,
+    .About_Us_Right {
+
+        word-wrap: break-word;
+
+        p {
+            text-align: left !important;
+        }
+    }
+
+    .Clients {
+        border-top-color: $Blue_Oxford !important;
+    }
+
+    .Clients_Right {
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+
+}

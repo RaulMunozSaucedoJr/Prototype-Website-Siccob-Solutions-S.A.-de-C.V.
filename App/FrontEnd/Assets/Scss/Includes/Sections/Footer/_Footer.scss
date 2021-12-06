@@ -1,0 +1,93 @@
+@import '../../Mixins/Index_Mixins';
+@import '../../General_Properties/Paddings';
+@import '../../General_Properties/Margins';
+
+.Footer {
+
+    @include White_Background;
+
+    &_Left {
+        @include W100_HAUTO;
+        padding: $Padding_2;
+
+        img {
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
+            pointer-events: none;
+        }
+    }
+
+    &_Center {
+        @include W100_HAUTO;
+
+        ul {
+            padding: $Padding_2;
+
+            li {
+                @include Border_Botom_Blue_Solid;
+
+                a {
+                    @include General_Medium_Granite;
+
+                    img {
+                        width: 1em;
+                        height: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    &_Right {
+        @include W100_HAUTO;
+        padding: $Padding_2;
+
+        &_Title {
+            @include Title_ExtraSmall_Blue;
+        }
+
+        input+p {
+            font-family: $Titles_Subtitles;
+            font-size: $Doble_Extra_Chica;
+            color: $Error;
+            text-decoration: none;
+            text-align: center;
+            outline: none !important;
+            opacity: 0;
+            height: 0;
+        }
+
+        input.invalido+p {
+            opacity: 1;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .Register_Newsletter {
+            @include Blue_Background;
+            font-family: $Titles_Subtitles;
+            font-size: $Doble_Extra_Chica;
+            color: $Platinum_White;
+            border-radius: 0;
+
+            &:hover {
+                background-color: transparent;
+                outline: $Blue_Oxford;
+                border-color: $Blue_Oxford;
+                color: $Blue_Oxford;
+                transition: .8s;
+            }
+        }
+    }
+
+    &_Bottom {
+        @include W100_HAUTO;
+        @include Blue_Background;
+        padding: $Padding_2;
+
+        h4 {
+            @include Title_ExtraSmall_White
+        }
+    }
+}

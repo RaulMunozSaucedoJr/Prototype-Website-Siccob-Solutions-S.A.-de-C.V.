@@ -1,0 +1,55 @@
+@import '../../Mixins/Index_Mixins';
+@import '../../General_Properties/Paddings';
+@import '../../General_Properties/Margins';
+
+.Services {
+
+    &_Left {
+        @include White_Background;
+        @include Border_Blue_Solid;
+
+        @include Border_Left_Transparent;
+
+        &_Inner_1 {
+            z-index: 2;
+            border-right: $Blue_Oxford solid .2em;
+            @include Border_Botom_Blue_Solid;
+        }
+
+        &_Inner_2 {
+            z-index: 2;
+            @include Border_Botom_Blue_Solid;
+        }
+
+        &_Inner_3 {
+            border-right: $Blue_Oxford solid .2em;
+        }
+
+        li {
+
+            @include List_Services;
+
+            img {
+                position: absolute;
+                width: 50%;
+                height: auto;
+                object-fit: cover;
+                z-index: 2;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: .5s;
+            }
+        }
+    }
+
+    &_Right {
+        @include Blue_Background;
+        @include Border_Blue_Solid;
+        @include Border_Left_Transparent;
+
+        h1 {
+            @include Title_Big_White_Vertical;
+        }
+    }
+}

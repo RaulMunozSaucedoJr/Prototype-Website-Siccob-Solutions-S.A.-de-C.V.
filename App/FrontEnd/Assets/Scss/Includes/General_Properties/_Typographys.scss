@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'IBM';
+    src: url("/App/FrontEnd/Assets/Fonts/IBMBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Sawton';
+    src: url("/App/FrontEnd/Assets/Fonts/Sawton.otf") format("truetype");
+}
+
+$Titles_Subtitles: 'IBM';
+$General_Text:'Sawton';

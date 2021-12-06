@@ -1,0 +1,32 @@
+@import '../../General_Properties/_Colors';
+
+
+//!Transparent Borders
+
+@mixin Transparent_Border_Left_Bottom_Right {
+    border-left: transparent;
+    border-bottom: transparent;
+    border-right: transparent;
+}
+
+@mixin Transparent_Border_Left_Bottom {
+    border-bottom: transparent;
+    border-left: transparent;
+}
+
+@mixin Border_Right_Transparent {
+    border-right: transparent;
+}
+
+@mixin Border_Left_Transparent {
+    border-left: transparent;
+}
+
+//!Color Borders
+@mixin Border_Blue_Solid {
+    border: $Blue_Oxford solid .2em;
+}
+
+@mixin Border_Botom_Blue_Solid {
+    border-bottom: $Blue_Oxford solid .2em;
+}

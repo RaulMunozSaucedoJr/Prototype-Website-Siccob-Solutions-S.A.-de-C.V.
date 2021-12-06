@@ -1,0 +1,32 @@
+@import '../../Mixins/Index_Mixins';
+@import '../../General_Properties/Paddings';
+@import '../../General_Properties/Margins';
+
+.Clients {
+
+    &_Left {
+        @include W100_HAUTO;
+        @include White_Background;
+        @include Border_Blue_Solid;
+        @include Border_Botom_Blue_Solid;
+        @include Border_Left_Transparent;
+
+        h1 {
+            @include Title_ExtraBig_Blue_Vertical;
+        }
+    }
+
+    &_Right {
+        @include Blue_Background;
+        @include Border_Botom_Blue_Solid;
+        padding: 2em;
+
+        picture,
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            pointer-events: none;
+        }
+    }
+}

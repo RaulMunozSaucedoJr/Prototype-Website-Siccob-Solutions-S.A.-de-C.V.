@@ -1,0 +1,83 @@
+@import '../../Mixins/Index_Mixins';
+@import '../../General_Properties/Paddings';
+@import '../../General_Properties/Margins';
+
+.Hero {
+
+    &_Left {
+        @include Blue_Background;
+        @include Border_Blue_Solid;
+        @include Transparent_Border_Left_Bottom;
+
+        h1 {
+            @include Title_Big_White;
+        }
+
+        p {
+            @include General_White;
+        }
+    }
+
+    &_Right {
+        @include White_Background;
+
+        &_Inner_1 {
+            width: 100%;
+            height: 70vh;
+            padding: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &_Inner_2 {
+            @include W100_H30;
+            @include White_Background;
+            @include Border_Blue_Solid;
+            @include Transparent_Border_Left_Bottom;
+        }
+
+        &_Inner_3 {
+            @include W100_H30;
+            @include White_Background;
+            @include Border_Blue_Solid;
+            @include Transparent_Border_Left_Bottom_Right;
+
+            .Button {
+                position: relative;
+                padding: 1rem;
+                z-index: 1;
+                outline: none;
+
+                &:before {
+                    transition: all 0.85s cubic-bezier(0.50, -0.40, 0.250, 1.20);
+                    content: '';
+                    width: 50%;
+                    height: 100%;
+                    @include White_Background;
+                    @include Border_Blue_Solid;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+
+                &_Text {
+                    @include Title_Small_Blue;
+                    z-index: 1;
+                }
+
+                &:hover {
+
+                    &:before {
+                        background-color: transparent;
+                        width: 100%;
+                        z-index: -1;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
