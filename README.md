@@ -56,13 +56,13 @@ Cualquier duda o aclaración, favor de referise al correo electrónico y/o los d
 
 #### ¿Porque aún NO es totalmente responsivo?
 
-Por falta de tiempo el **responsive design** se ha postegado, pero aún así se aprecia bien en dispositivos moviles.
+Por falta de tiempo el **responsive design** se ha postegado, aparte de que el diseño se pensó para que fuera Desktop First, pero aún así se aprecia bien en dispositivos moviles.
 
 #### ¿Porque se encuentra cuadriculado el diseño?
 
 Se pensó e ideo en base a la tendencia de **GRID´S GEOMETRICOS**.
 
-#### ¿Porque tiene ese efectos smooth al realizar scroll en el sitio?
+#### ¿Porque tiene ese efecto smooth al realizar scroll en el sitio?
 
 Se pensó en darle un efecto **"Moderno"** al sitio al realizar scroll.
 
